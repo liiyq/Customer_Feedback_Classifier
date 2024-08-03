@@ -1,7 +1,12 @@
-# Customer-Feedback-Classifier
+# Needle in a Haystack
 
 ## Overview
-Classifies customer feedback into complaints and non-complaints.
+This project identifies non-complaint customer tweets using an LSTM model.
 
 ## Data
-Contains tweets labeled as complaints or non-complaints. Uses TF-IDF for feature extraction and Logistic Regression for classification.
+- `complaint.txt`: Contains samples of complaint tweets.
+- `noncomplaint.txt`: Contains samples of non-complaint tweets.
+- `customertweets.csv`: Contains tweets that may be complaints or non-complaints. The task is to find non-complaints.
+
+## Model
+The project uses an LSTM model to classify tweets. The model is trained on preprocessed text data with TF-IDF vectorization.
